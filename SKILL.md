@@ -11,7 +11,7 @@ user-invocable: true
 last-updated: 2026-09-14
 ---
 
-# LINE 框線表格
+# 文字版空檔時間表
 
 LINE 手機版不支援 Markdown，也不是等寬字型。直接照一般 ASCII 表格排，傳出去一定歪或被換行。
 這份 Skill 記錄的是 2026-09-14 在 LINE Android 上實際傳送、截圖驗證過的排版規則。
