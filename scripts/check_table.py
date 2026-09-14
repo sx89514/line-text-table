@@ -5,7 +5,7 @@
     python check_table.py table.txt --max-width 13
 
 計寬規則（依 2026-09-14 LINE Android 實測）：
-- 框線字元、中日文字、全形英數、全形空白、● 都算 1 格。
+- 框線符號、中日文字、全形英數、全形空白、● 都算 1 格。
 - 半形字（ASCII 英數、半形空白、標點）算 0.5 格，而且寬度會跟全形不成比例 → 一律報錯。
 - 其他符號（○ ✕ ★ emoji…）寬度沒實測過 → 報警告。
 """
@@ -17,7 +17,7 @@ import unicodedata
 VERIFIED_SYMBOLS = {"●"}
 
 BOX_START, BOX_END = 0x2500, 0x257F
-# 會形成「直線」位置的框線字元
+# 會形成「直線」位置的框線符號
 VERTICAL = set("│┼┬┴├┤┌┐└┘")
 
 
